@@ -3,7 +3,7 @@
 #
 FROM maven:3.8.6-openjdk-11-slim AS build
 COPY . .
-RUN mvn -f home/app/pom.xml clean package
+RUN mvn clean package
 
 #
 # Package stage
